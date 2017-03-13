@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css2/style.css" media="all">
+  <link rel="stylesheet" href="css2/bootstrap.min.css">
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	<link href="js/animate.min.css" rel="stylesheet" media="all">
+  <script src="js/bootstrap_slider.js"></script>
+	
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext,vietnamese');   
+body{font-family: 'Quicksand', sans-serif;}
+   h4{
+    	font-weight: 600;
+	}
+	p{
+		font-size: 12px;
+		margin-top: 5px;
+	}
+	.price{
+		font-size: 30px;
+    	margin: 0 auto;
+    	color: #333;
+	}
+
+	.thumbnail{
+		opacity:0.70;
+		-webkit-transition: all 0.5s; 
+		transition: all 0.5s;
+	}
+	.thumbnail:hover{
+		opacity:1.00;
+		box-shadow: 0px 0px 10px #4bc6ff;
+	}
+	.line{
+		margin-bottom: 5px;
+	}
+	@media screen and (max-width: 770px) {
+		.right{
+			float:left;
+			width: 100%;
+		}
+	}
+	span.thumbnail {
+	
+        border: 1px solid #00c4ff !important;
+    border-radius: 0px !important;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.16);
+	padding: 10px;
+}
+a.thumbnail {
+color:#333;
+	text-decoration:none;
+        border: 1px solid #00c4ff !important;
+    border-radius: 0px !important;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.16);
+	padding: 10px;
+}
+.container h4{margin-top:70px; margin-bottom:30px;}
+button {    margin-top: 6px;
+}
+.right {
+    float: right;
+    border-bottom: 2px solid #0a5971;
+}
+.btn-info {
+    color: #fff;
+    background-color: #19b4e2;
+    border-color: #19b4e2;
+	font-size:13px;
+	font-weight:600;
+}
+/* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+      }
+
+      /* Add a gray background color and some padding to the footer */
+      footer {
+        background-color: #f2f2f2;
+        padding: 25px;
+      }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <img class="text-center img-responsive" src="images/logo.png" height="120px" width="120px">
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Stores</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+<h4> New products</h4>
+	<div class="row">
+    	<div class="col-md-3 col-sm-6">
+        <a class="thumbnail" href="product_details.html">
+        	<img src="images/pulses/atta.jpg" alt="...">
+            <h4>Product Name</h4>
+            <div class="rating">
+            	<span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </div>
+            <p>inf sdasj sdasmdsakmd asdasdasdas dsadasidas dasdsakd</p>
+            <hr class="line">
+            <div class="row">
+            	<div class="col-md-6 col-sm-6"><p class="price">$29,90</p></div>
+                <div class="col-md-6 col-sm-6">
+                	<button class="btn btn-info right"> BUY</button>
+                </div>
+            </div>
+        </a>
+        </div>
+        
+        <div class="col-md-3 col-sm-6">
+        <span class="thumbnail">
+        	<img src="images/pulses/sugar.jpg" alt="...">
+            <h4>Product Name</h4>
+            <div class="rating">
+            	<span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </div>
+            <p>inf sdasj sdasmdsakmd asdasdasdas dsadasidas dasdsakd</p>
+            <hr class="line">
+            <div class="row">
+            	<div class="col-md-6 col-sm-6"><p class="price">$29,90</p></div>
+                <div class="col-md-6 col-sm-6">
+                	<button class="btn btn-info right"> BUY</button>
+                </div>
+            </div>
+        </span>
+        </div>
+        
+        <div class="col-md-3 col-sm-6">
+        <span class="thumbnail">
+        	<img src="images/pulses/salt.jpg" alt="...">
+            <h4>Product Name</h4>
+            <div class="rating">
+            	<span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </div>
+            <p>inf sdasj sdasmdsakmd asdasdasdas dsadasidas dasdsakd</p>
+            <hr class="line">
+            <div class="row">
+            	<div class="col-md-6 col-sm-6"><p class="price">$29,90</p></div>
+                <div class="col-md-6 col-sm-6">
+                	<button class="btn btn-info right"> BUY</button>
+                </div>
+            </div>
+        </span>
+        </div>
+        
+        <div class="col-md-3 col-sm-6">
+        <span class="thumbnail">
+        	<img src="images/pulses/semi.jpg" alt="...">
+            <h4>Product Name</h4>
+            <div class="rating">
+            	<span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </div>
+            <p>inf sdasj sdasmdsakmd asdasdasdas dsadasidas dasdsakd</p>
+            <hr class="line">
+            <div class="row">
+            	<div class="col-md-6 col-sm-6"><p class="price">&#x20b9;29,90</p></div>
+                <div class="col-md-6 col-sm-6">
+                	<button class="btn btn-info right"> BUY</button>
+                </div>
+            </div>
+        </span>
+        </div>
+    </div>
+    
+</div>
+<br><br>
+
+<footer class="container-fluid text-center">
+  <p>Online Store Copyright</p>  
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+</footer>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_store&stacked=h by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Mar 2017 12:12:16 GMT -->
+</html>

@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css2/style.css" media="all">
+  <link rel="stylesheet" href="css2/bootstrap.min.css">
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	<link href="js/animate.min.css" rel="stylesheet" media="all">
+  <script src="js/bootstrap_slider.js"></script>
+	
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext,vietnamese');   
+body{font-family: 'Quicksand', sans-serif;}
+   h4{
+    	font-weight: 600;
+	}
+	p{
+		font-size: 12px;
+		margin-top: 5px;
+	}
+	.price{
+		font-size: 30px;
+    	margin: 0 auto;
+    	color: #333;
+	}
+
+	.thumbnail{
+		opacity:0.70;
+		-webkit-transition: all 0.5s; 
+		transition: all 0.5s;
+	}
+	.thumbnail:hover{
+		opacity:1.00;
+		box-shadow: 0px 0px 10px #4bc6ff;
+	}
+	.line{
+		margin-bottom: 5px;
+	}
+	@media screen and (max-width: 770px) {
+		.right{
+			float:left;
+			width: 100%;
+		}
+	}
+	span.thumbnail {
+	
+        border: 1px solid #00c4ff !important;
+    border-radius: 0px !important;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.16);
+	padding: 10px;
+}
+a.thumbnail {
+color:#333;
+	text-decoration:none;
+        border: 1px solid #00c4ff !important;
+    border-radius: 0px !important;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.16);
+	padding: 10px;
+}
+.container h4{margin-top:70px; margin-bottom:30px;}
+button {    margin-top: 6px;
+}
+.right {
+    float: right;
+    border-bottom: 2px solid #0a5971;
+}
+.btn-info {
+    color: #fff;
+    background-color: #19b4e2;
+    border-color: #19b4e2;
+	font-size:13px;
+	font-weight:600;
+}
+  </style>
+</head>
+<body>
+<div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="3000" >
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+                <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+                <li data-target="#bootstrap-touch-slider" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper For Slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <!-- Third Slide -->
+                <div class="item active">
+
+                    <!-- Slide Background -->
+                    <img src="images/Udhaiyam%20Web%20Home%20Pg-01.jpg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+
+                    <div class="container">
+                        <div class="row">
+                            <!-- Slide Text Layer -->
+                            <div class="slide-text slide_style_left">
+                                <h1 data-animation="animated zoomInRight">Udhaiyam </h1>
+                                <p data-animation="animated fadeInLeft">Bootstrap carousel now touch enable slide.</p>
+                                <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select one</a>
+                                <a href="http://bootstrapthemes.co/" target="_blank"  class="btn btn-primary" data-animation="animated fadeInRight">select two</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+
+                <!-- Second Slide -->
+                <div class="item">
+
+                    <!-- Slide Background -->
+                    <img src="images/Udhaiyam%20Web%20Home%20Pg-02.jpg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+                    <!-- Slide Text Layer -->
+                    <div class="slide-text slide_style_center">
+                        <h1 data-animation="animated flipInX">Udhaiyam Dall</h1>
+                        <!-- <p data-animation="animated lightSpeedIn">Make Bootstrap Better together.</p>
+                        <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">select one</a>
+                        <a href="http://bootstrapthemes.co/" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">select two</a> -->
+                    </div>
+                </div>
+                <!-- End of Slide -->
+
+                <!-- Third Slide -->
+                <div class="item">
+
+                    <!-- Slide Background -->
+                    <img src="images/Udhaiyam%20Web%20Home%20Pg-03.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+                    <!-- Slide Text Layer -->
+                    <!-- <div class="slide-text slide_style_right">
+                        <h1 data-animation="animated zoomInLeft">Beautiful Animations</h1>
+                        <p data-animation="animated fadeInRight">Lots of css3 Animations to make slide beautiful .</p>
+                        <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select one</a>
+                        <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-primary" data-animation="animated fadeInRight">select two</a>
+                    </div> -->
+                </div>
+								<!-- Third Slide -->
+                <div class="item">
+
+                    <!-- Slide Background -->
+                    <img src="images/Udhaiyam%20Web%20Home%20Pg-04.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+                    <!-- Slide Text Layer -->
+                    <!-- <div class="slide-text slide_style_right">
+                        <h1 data-animation="animated zoomInLeft">Beautiful Animations</h1>
+                        <p data-animation="animated fadeInRight">Lots of css3 Animations to make slide beautiful .</p>
+                        <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select one</a>
+                        <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-primary" data-animation="animated fadeInRight">select two</a>
+                    </div> -->
+                </div>
+                <!-- End of Slide -->
+
+
+            </div><!-- End of Wrapper For Slides -->
+
+            <!-- Left Control -->
+            <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <!-- Right Control -->
+            <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div> <!-- End  bootstrap-touch-slider Slider -->
+        
+        
+        
+             
+<div class="container">
+<h4> New products</h4>
+	<div class="row">
+    	<div class="col-md-3 col-sm-6">
+        <a class="thumbnail" href="product_details.html">
+        	<img src="images/pulses/atta.jpg" alt="...">
+            <h4>Product Name</h4>
+            <div class="rating">
+            	<span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </div>
+            <p>inf sdasj sdasmdsakmd asdasdasdas dsadasidas dasdsakd</p>
+            <hr class="line">
+            <div class="row">
+            	<div class="col-md-6 col-sm-6"><p class="price">$29,90</p></div>
+                <div class="col-md-6 col-sm-6">
+                	<button class="btn btn-info right"> BUY</button>
+                </div>
+            </div>
+        </a>
+        </div>
+        
+        <div class="col-md-3 col-sm-6">
+        <span class="thumbnail">
+        	<img src="images/pulses/sugar.jpg" alt="...">
+            <h4>Product Name</h4>
+            <div class="rating">
+            	<span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </div>
+            <p>inf sdasj sdasmdsakmd asdasdasdas dsadasidas dasdsakd</p>
+            <hr class="line">
+            <div class="row">
+            	<div class="col-md-6 col-sm-6"><p class="price">$29,90</p></div>
+                <div class="col-md-6 col-sm-6">
+                	<button class="btn btn-info right"> BUY</button>
+                </div>
+            </div>
+        </span>
+        </div>
+        
+        <div class="col-md-3 col-sm-6">
+        <span class="thumbnail">
+        	<img src="images/pulses/salt.jpg" alt="...">
+            <h4>Product Name</h4>
+            <div class="rating">
+            	<span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </div>
+            <p>inf sdasj sdasmdsakmd asdasdasdas dsadasidas dasdsakd</p>
+            <hr class="line">
+            <div class="row">
+            	<div class="col-md-6 col-sm-6"><p class="price">$29,90</p></div>
+                <div class="col-md-6 col-sm-6">
+                	<button class="btn btn-info right"> BUY</button>
+                </div>
+            </div>
+        </span>
+        </div>
+        
+        <div class="col-md-3 col-sm-6">
+        <span class="thumbnail">
+        	<img src="images/pulses/semi.jpg" alt="...">
+            <h4>Product Name</h4>
+            <div class="rating">
+            	<span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </div>
+            <p>inf sdasj sdasmdsakmd asdasdasdas dsadasidas dasdsakd</p>
+            <hr class="line">
+            <div class="row">
+            	<div class="col-md-6 col-sm-6"><p class="price">&#x20b9;29,90</p></div>
+                <div class="col-md-6 col-sm-6">
+                	<button class="btn btn-info right"> BUY</button>
+                </div>
+            </div>
+        </span>
+        </div>
+    </div>
+    
+</div>
+
+</body>
+</html>
